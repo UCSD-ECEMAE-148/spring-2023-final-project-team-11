@@ -14,7 +14,13 @@ Camera Mount
 ![Camera Holder](https://github.com/UCSD-ECEMAE-148/spring-2023-final-project-team-11/blob/95d3698ba76fe9bdd440be4e1cb2df6f27e9c0b1/cameramount.png)
 Insert STL link 
 
-![Jetson Nano Box]
+Jetson Nano Box
+![Jetson Nano Box](https://github.com/UCSD-ECEMAE-148/spring-2023-final-project-team-11/blob/2ad4946b3deb140e450b29f611d32e5377afdae4/jetsonnano.png)
+INSERT STL LINK
+
+GPS Antenna Holder
+![Gps antenna](
+
 
 
 
