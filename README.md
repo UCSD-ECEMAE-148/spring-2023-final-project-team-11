@@ -28,15 +28,15 @@ https://drive.google.com/file/d/1CBKftGoKpYAd6sONSb91aAE9nv0K9wOS/view?usp=shari
 
 CAMERA MOUNT
 ![Camera Holder](https://github.com/UCSD-ECEMAE-148/spring-2023-final-project-team-11/blob/95d3698ba76fe9bdd440be4e1cb2df6f27e9c0b1/cameramount.png)
-Insert STL link 
+https://drive.google.com/file/d/1UGOAdFSb1FseyxyXQ38SEtlAVXhtqSz_/view?usp=sharing 
 
 JETSON NANO BOX
 ![Jetson Nano Box](https://github.com/UCSD-ECEMAE-148/spring-2023-final-project-team-11/blob/2ad4946b3deb140e450b29f611d32e5377afdae4/jetsonnano.png)
-INSERT STL LINK
+https://drive.google.com/file/d/1mRmjw0yh-ud6LM5NPJpmIvlIRE6YK5zS/view?usp=sharing
 
 GPS ANTENNA HOLDER
 ![Gps antenna](https://github.com/UCSD-ECEMAE-148/spring-2023-final-project-team-11/blob/29044bc4fc2926ed3c90b616b73a5f8f6f5585c7/gpsantennabox.png)
-INSERT STL LINK
+https://drive.google.com/file/d/1NxUeukkxruL37zQcKq5dU6Qp4947hLyl/view?usp=sharing 
 
 OUR BASE
 ![base](https://github.com/UCSD-ECEMAE-148/spring-2023-final-project-team-11/blob/b4bb2b8e3c5cfcfc6559e24f26d613ec78e2cb63/top.png)
