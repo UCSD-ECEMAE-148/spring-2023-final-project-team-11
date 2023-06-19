@@ -48,6 +48,9 @@ OUR BASE
 CIRCUIT DIAGRAM
 ![wires](https://github.com/UCSD-ECEMAE-148/spring-2023-final-project-team-11/blob/966e17f99d5ce88e912dde342c222c295c03093d/circut.png) 
 
+## Documentation                                                                                                                                                                                                                               
+https://docs.google.com/presentation/d/1tIUrr8ocEmKy1naIhokfaQ5sWk7dOD0NittV1mmkf3Q/edit?usp=sharing (Progress slides)
+https://docs.google.com/presentation/d/1rF5Uken820gmBtOeDeFbb__R1WndTImoSI1vXXBAYzQ/edit?usp=sharing (Final slides)
 
 ## Project Software
 NEEDED                                                                                                                                                                                                                                 
