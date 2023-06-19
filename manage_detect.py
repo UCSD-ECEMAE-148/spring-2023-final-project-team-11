@@ -68,6 +68,11 @@ from donkeycar.parts.logger import LoggerPart
 from donkeycar.parts.transform import Lambda
 from donkeycar.parts.explode import ExplodeDict
 
+# Accessing the OAKD camera part (d4)
+from donkeycar.parts.camera import OAKD
+# Custom part code:
+from donkeycar.parts.SignDiff import SignDetect, Throttle, DaiDis
+
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO)
 
@@ -281,11 +286,35 @@ def drive(cfg, use_joystick=False, camera_type='single'):
     V.add(cte, inputs=['path', 'pos/x', 'pos/y', 'cte/closest_pt'], outputs=['cte/error', 'cte/closest_pt'], run_condition='run_pilot')
 
 
+    # Sign detection implementation code:
+    # The code for the OAKD camera part was utilized to read images
+    frames = OAKD(image_w=640, image_h=480)
+    # Outputs frame data in camera/image to be interpreted with the sign detection
+    # Threading of the part was implemented to speed up the process
+    V.add(frames, outputs=['camera/image'], threaded=True)
+    
+    # The class SignDetect is called to process the image with the sign detection code
+    # Either images or strings with the sign interpreted are outputted
+    signd = SignDetect()
+    # Sign strings to camera/sign
+    V.add(signd, inputs=['camera/image','camera/sign'], outputs=['camera/sign'])
+    # Sign detection frames to camera/image
+    # V.add(signd, inputs=['camera/image','camera/sign'], outputs=['camera/image'])
+    # A separate part called DaiDis is called to show the frames within camera/image
+    # display = DaiDis()
+    # V.add(display, inputs=['camera/sign'])
+    
     # This will use the cross track error and PID constants to try to steer back towards the path.
     pid = PIDController(p=cfg.PID_P, i=cfg.PID_I, d=cfg.PID_D)
     pilot = PID_Pilot(pid, cfg.PID_THROTTLE, cfg.USE_CONSTANT_THROTTLE, min_throttle=cfg.PID_THROTTLE)
     V.add(pilot, inputs=['cte/error', 'throttles', 'cte/closest_pt'], outputs=['pilot/steering', 'pilot/throttle'], run_condition="run_pilot")
-
+    
+    # The throttle part is called to input throttle values for the car to utilize in response to signs
+    control = Throttle()
+    # With sign strings as inputs, the throttle and steering values are outputted
+    # This overrides the piloting output by the PID_Pilot with set values to move the car
+    V.add(control, inputs=['camera/sign'], outputs=['pilots/steering','pilot/throttle'])
+    
     def dec_pid_d():
         pid.Kd -= cfg.PID_D_DELTA
         logging.info("pid: d- %f" % pid.Kd)
