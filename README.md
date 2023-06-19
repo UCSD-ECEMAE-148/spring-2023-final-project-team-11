@@ -1,4 +1,6 @@
 # GPS DonkeyCar Meets OpenCV
+  ![robocar](https://github.com/UCSD-ECEMAE-148/spring-2023-final-project-team-11/blob/381a6774dd6c780c78b22fd4cef08677185b0f17/robocar.png)
+
 ## Team Members 
 Nelson Mejia (ECE) 
 Trevor Oshiro (MAE)
