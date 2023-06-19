@@ -6,10 +6,15 @@ Fatima Rivera(MAE)
 
 # Class Assignments
 DONKEY CAR GPS LAP
+https://youtu.be/HF_uWr-LfZc 
 
 DONKEY CAR 3 AUTONOMOUS LAPS
+https://youtu.be/48AIkPg58hs
 
-ROS2 LANE DETECTION LAPS
+ROS2 LANE/LINE DETECTION LAPS
+https://youtu.be/FVdoV9Ju1tA (line following)
+https://youtu.be/wVU0CtzTTLg (outer lane)
+https://youtu.be/kGFEa9MHVKs (inner lane) 
 
 # Final Project Overview 
 As a team, we wanted to build up from the GPS assignment we had at the beginning of the spring 2023 quarter. So we wanted to use DonkeyCar to create a predefined waypoint path that we wanted our car to follow while also doing sign detection. Depending on what sign out Robocar saw it would either turn left (_left.png), right (_right.png) or stop (_park.png). At first we wanted to use YOLO for the sign detection but after the advisement of our TA, we used OpenCV instead. 
