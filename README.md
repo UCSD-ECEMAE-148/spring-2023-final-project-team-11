@@ -40,8 +40,17 @@ INSERT STL LINK
 
 OUR BASE
 ![base](https://github.com/UCSD-ECEMAE-148/spring-2023-final-project-team-11/blob/b4bb2b8e3c5cfcfc6559e24f26d613ec78e2cb63/top.png)
-![base](
+![base](https://github.com/UCSD-ECEMAE-148/spring-2023-final-project-team-11/blob/f0288253a1da134d82cac0e02485542b9c3a0a17/view.png)
 
+
+## Project Software
+NEEDED                                                                                                                                                                                                                                 
+OpenCV                                                                                                                                                                                                                       
+Depth ai                                                                                                                                                                                                                                           
+DonkeyCar                      
+
+THE PROCESS                                                                                                                                                                                                                     
+Using Donkeycar GPS navigation we added a Python script that mimicked the manage.py we used for the assignment given in class. 
 
 
 
