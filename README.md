@@ -43,7 +43,7 @@ OUR BASE
 ![base](https://github.com/UCSD-ECEMAE-148/spring-2023-final-project-team-11/blob/f0288253a1da134d82cac0e02485542b9c3a0a17/view.png)
 
 CIRCUIT DIAGRAM
-![wires](
+![wires](https://github.com/UCSD-ECEMAE-148/spring-2023-final-project-team-11/blob/966e17f99d5ce88e912dde342c222c295c03093d/circut.png) 
 
 
 ## Project Software
