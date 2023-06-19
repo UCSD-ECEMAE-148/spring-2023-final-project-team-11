@@ -10,3 +10,5 @@ Battery Holder
 ![Battery Holder](https://github.com/UCSD-ECEMAE-148/spring-2023-final-project-team-11/blob/1f2ff2040c63c73849d0fed2d56ef6b0848c5629/battery%20holder.png)
 
 https://drive.google.com/file/d/1CBKftGoKpYAd6sONSb91aAE9nv0K9wOS/view?usp=sharing 
+
+![Camera Holder](https://github.com/UCSD-ECEMAE-148/spring-2023-final-project-team-11/blob/1f2ff2040c63c73849d0fed2d56ef6b0848c5629/battery%20holder.png)
