@@ -50,7 +50,8 @@ Depth ai
 DonkeyCar                      
 
 THE PROCESS                                                                                                                                                                                                                     
-Using Donkeycar GPS navigation we added a Python script that mimicked the manage.py we used for the assignment given in class. 
+Using Donkeycar GPS navigation we added a Python script to path_follow_car directory that mimicked the manage.py we used for the assignment given in class. In our case, this Python script is called manage_detect.py. Then in donkeycar/donkeycar/parts we added our SignDiff.py. This script would control the throttle and steering of our car when it would detect any of the signs we had. WARNING the png images you use for the sign detection must go in the same directory as your Python script. So our images were also uploaded into the parts directory of DonkeyCar. This gave us a functional robocar that performed well for our final project. 
+We would also like to give thanks to https://github.com/jayeshbhole/Sign-Detection-OpenCV.git which helped us figure out how to go on with OpenCV and our sign detection. 
 
 
 
