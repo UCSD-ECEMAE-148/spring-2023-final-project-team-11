@@ -50,7 +50,15 @@ Depth ai
 DonkeyCar                      
 
 THE PROCESS                                                                                                                                                                                                                     
-Using Donkeycar GPS navigation we added a Python script to path_follow_car directory that mimicked the manage.py we used for the assignment given in class. In our case, this Python script is called manage_detect.py. Then in donkeycar/donkeycar/parts we added our SignDiff.py. This script would control the throttle and steering of our car when it would detect any of the signs we had. WARNING the png images you use for the sign detection must go in the same directory as your Python script. So our images were also uploaded into the parts directory of DonkeyCar. This gave us a functional robocar that performed well for our final project. 
+Using Donkeycar GPS navigation we added a Python script to path_follow_car directory that mimicked the manage.py we used for the assignment given in class. In our case, this Python script is called manage_detect.py. Then in donkeycar/donkeycar/parts we added our SignDiff.py. This script would control the throttle and steering of our car when it would detect any of the signs we had. 
+
+Depth ai was utilized through the incorporation of the OAKD camera part within the donkeycar framework. When activating the part, we specified values for the frame dimensions it would output. Through the pipeline created for the camera, the OAKD camera part continuously received image frames through the threaded execution of the run_threaded function for the part. This allowed for the component to run alongside the other part's processes for more efficient image processing. 
+
+The sign detection part of the process was carried out with the SignDetect part created with the donkeycar framework. The code takes in the images from the OAKD camera and outputs the signs it recognizes (if any) via a string. For debugging purposes, the code also can be set to output frames to show live feed for the sign detection. This was mainly utilized to spot any areas needed for tuning within the application of computer vision filtering techniques. The DaiDis part was utilized for this purpose, as it only takes inputs from the camera/sign detection and displays them in a separate window.
+
+We then triggered the car's throttle and steering to react to the signs with the use of another part named Throttle. This was placed sequentially after the PID control outputs for navigation. This was done to override the path follwowing values when the sign was detected. After the dign was detected, the throttle controls then reverted back to the GPS navigation code through the pass statement used within Throttle, for signs not detected. 
+
+WARNING the png images you use for the sign detection must go in the same directory as your Python script. So our images were also uploaded into the parts directory of DonkeyCar. This gave us a functional robocar that performed well for our final project. 
 We would also like to give thanks to https://github.com/jayeshbhole/Sign-Detection-OpenCV.git which helped us figure out how to go on with OpenCV and our sign detection. 
 
 
